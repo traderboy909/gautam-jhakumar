@@ -1,82 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#07111f">
 
-<title>Gautam Kumar Jha | Stock Market</title>
-<meta name="description" content="Join Gautam Kumar Jha's Telegram community for stock market education and Nifty, BankNifty and Sensex analysis.">
+<title>Gautam Kumar Jha | Join Telegram</title>
+<meta name="description" content="Join Gautam Kumar Jha's Telegram stock market education community.">
 
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s){
   if(f.fbq)return;
-  n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  n=f.fbq=function(){
+    n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
+  };
   if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=true;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=true;
-  t.src=v;s=b.getElementsByTagName(e)[0];
+  n.push=n;
+  n.loaded=true;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=true;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s);
-}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init','1839050710479033');
 fbq('track','PageView');
 </script>
 
 <style>
-:root {
+:root{
   --bg:#06101d;
-  --panel:#102139;
-  --panel2:#172d46;
   --gold:#f4c76b;
-  --gold2:#e6a83c;
   --text:#f7f9ff;
   --muted:#a7b4c7;
   --green:#4de0a0;
+  --blue:#5fd4ff;
   --border:rgba(255,255,255,.10);
 }
 
-* {
+*{
   box-sizing:border-box;
   margin:0;
   padding:0;
 }
 
-html {
+html{
   scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
 }
 
-body {
+body{
   min-height:100vh;
+  min-height:100svh;
   padding:14px 12px 26px;
+  padding-left:max(12px,env(safe-area-inset-left));
+  padding-right:max(12px,env(safe-area-inset-right));
   color:var(--text);
   font-family:Arial,Helvetica,sans-serif;
   background:
     radial-gradient(ellipse at 50% -5%,#1d3a59,transparent 47%),
     var(--bg);
+  overflow-wrap:break-word;
 }
 
-.container {
+img{
+  max-width:100%;
+}
+
+.container{
   width:100%;
   max-width:460px;
   margin:0 auto;
 }
 
-a {
-  -webkit-tap-highlight-color:transparent;
-}
-
-.top {
+.top{
   text-align:center;
   margin:2px 0 13px;
 }
 
-.badge {
+.badge{
   display:inline-flex;
   align-items:center;
+  justify-content:center;
   gap:8px;
   padding:9px 13px;
   border-radius:30px;
@@ -86,19 +97,22 @@ a {
   font-size:10px;
   font-weight:800;
   letter-spacing:1px;
+  max-width:100%;
 }
 
-.dot {
-  width:7px;
-  height:7px;
-  flex-shrink:0;
+.dot,.green-dot{
+  width:8px;
+  height:8px;
   display:inline-block;
+  flex-shrink:0;
   border-radius:50%;
   background:var(--green);
   box-shadow:0 0 10px #4de0a088;
 }
 
-.hero {
+/* HERO */
+
+.hero{
   position:relative;
   overflow:hidden;
   text-align:center;
@@ -109,17 +123,22 @@ a {
   box-shadow:0 20px 55px #0005;
 }
 
-.hero:before {
+.hero:before{
   content:"";
   position:absolute;
   left:12%;
   right:12%;
   top:0;
   height:2px;
-  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  background:linear-gradient(
+    90deg,
+    transparent,
+    var(--gold),
+    transparent
+  );
 }
 
-.logo {
+.logo{
   width:102px;
   height:102px;
   margin:0 auto 14px;
@@ -129,7 +148,7 @@ a {
   box-shadow:0 0 30px #f4c76b25;
 }
 
-.logo img {
+.logo img{
   display:block;
   width:100%;
   height:100%;
@@ -138,7 +157,7 @@ a {
   border:3px solid #102036;
 }
 
-.eyebrow {
+.eyebrow{
   font-size:10px;
   font-weight:800;
   letter-spacing:2px;
@@ -146,175 +165,179 @@ a {
   margin-bottom:8px;
 }
 
-h1 {
+h1{
   font-size:clamp(22px,6vw,29px);
   line-height:1.2;
   font-weight:900;
+  overflow-wrap:anywhere;
 }
 
-.tagline {
+.tagline{
   margin-top:9px;
   color:#d7e0ee;
   font-size:12px;
   line-height:1.8;
 }
 
-.gold {
+.gold{
   color:var(--gold);
 }
 
-.rating {
-  margin:12px 0 14px;
-  color:var(--gold);
-  font-size:18px;
-  letter-spacing:2px;
-}
+/* COMMUNITY CARD */
 
-.rating small {
-  display:block;
-  margin-top:5px;
-  color:var(--muted);
-  font-size:10px;
-  letter-spacing:0;
-  line-height:1.6;
-}
-
-/* Market Watch */
-.market {
-  margin:15px 0;
-  padding:13px 10px;
-  border:1px solid #2d4b65;
-  border-radius:15px;
-  background:linear-gradient(135deg,#0b1a2b,#10263b);
+.card{
+  margin:17px 0;
+  padding:15px 13px;
+  border:1px solid #294463;
+  border-radius:17px;
+  background:linear-gradient(140deg,#13273d,#0d192a);
   text-align:left;
 }
 
-.market-head {
+.community-status{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  min-width:0;
+}
+
+.green-dot{
+  width:9px;
+  height:9px;
+  flex:0 0 9px;
+  box-shadow:0 0 12px #4de0a055;
+}
+
+.status-title{
+  font-size:14px;
+  font-weight:800;
+}
+
+.status-sub{
+  margin-top:4px;
+  font-size:11px;
+  line-height:1.6;
+  color:#8aa0c7;
+}
+
+.live-box{
+  margin-top:15px;
+  padding:13px 11px;
+  border-radius:13px;
+  background:#081322;
+  border:1px solid rgba(255,255,255,.07);
+}
+
+.live-head{
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:8px;
-  margin-bottom:11px;
+  margin-bottom:9px;
+  flex-wrap:wrap;
 }
 
-.market-title {
+.live-head b{
   font-size:11px;
-  font-weight:900;
-  letter-spacing:1px;
+  letter-spacing:.7px;
+  color:#ffcf75;
 }
 
-.market-status {
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
-  color:#a9f2d0;
-  font-size:9px;
-  font-weight:800;
-}
-
-.market-status .dot {
-  width:6px;
-  height:6px;
-}
-
-.market-grid {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:7px;
-}
-
-.market-item {
-  min-width:0;
-  padding:11px 5px;
-  text-align:center;
-  border-radius:10px;
-  background:#172d43;
-  border:1px solid #ffffff0c;
-}
-
-.market-item strong {
-  display:block;
-  font-size:11px;
-  white-space:nowrap;
-}
-
-.market-item span {
-  display:block;
-  margin-top:6px;
-  color:var(--muted);
-  font-size:9px;
-  line-height:1.5;
-}
-
-.market-note {
-  margin-top:9px;
-  text-align:center;
-  color:#8798ad;
-  font-size:9px;
-  line-height:1.5;
-}
-
-/* Telegram Community */
-.member-card {
-  margin:15px 0;
-  padding:15px 12px;
-  border-radius:16px;
-  border:1px solid #a77c373d;
-  background:linear-gradient(135deg,#182c42,#101b2b);
-}
-
-.member-label {
+.live-head span{
   font-size:10px;
-  font-weight:800;
-  letter-spacing:1.5px;
-  color:#d7e1ee;
+  color:#7a8ab0;
 }
 
-.member-number {
-  margin:8px 0 4px;
-  color:var(--gold);
-  font-size:31px;
+.join-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  font-size:11px;
+  color:#dce6f7;
+  min-width:0;
+}
+
+.join-row:last-of-type{
+  border-bottom:0;
+}
+
+.row-left{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-width:0;
+  flex:1;
+}
+
+.sample-name{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+.avatar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:28px;
+  height:28px;
+  flex:0 0 28px;
+  border-radius:9px;
+  font-style:normal;
   font-weight:900;
 }
 
-.member-caption {
-  font-size:11px;
-  line-height:1.6;
-  color:var(--muted);
+.avatar.green{
+  background:#1a3a1a;
+  color:#4aff7a;
 }
 
-.member-status {
-  display:inline-flex;
+.avatar.blue{
+  background:#1a2a3a;
+  color:#6ab4ff;
+}
+
+.avatar.purple{
+  background:#2a1a3a;
+  color:#c68cff;
+}
+
+.row-time{
+  font-size:10px;
+  color:#7a8ab0;
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.live-foot{
+  display:flex;
   align-items:center;
   gap:6px;
-  margin-top:10px;
-  padding:6px 9px;
-  border-radius:20px;
-  background:#103329;
-  color:#aaf2d2;
-  font-size:10px;
-  font-weight:700;
+  margin-top:11px;
+  color:#20ff66;
+  font-size:11px;
+  font-weight:800;
 }
 
-.member-status .dot {
-  width:6px;
-  height:6px;
+.activity-note{
+  margin-top:8px;
+  font-size:9px;
+  line-height:1.5;
+  color:#9aa9bf;
 }
 
-.member-error {
-  background:#1c2b3e;
-  color:#c0cada;
-}
+/* JOIN BUTTONS */
 
-/* Both CTA buttons */
-.btn {
+.btn{
   display:flex;
   align-items:center;
   justify-content:center;
   gap:9px;
   width:100%;
   min-height:56px;
-  padding:14px 10px;
+  padding:14px 12px;
   border-radius:14px;
   border:1px solid #ffe7ae;
   background:linear-gradient(135deg,#ffe9ad,#e8ad43);
@@ -326,53 +349,65 @@ h1 {
   letter-spacing:.25px;
   box-shadow:0 8px 24px #d99c3630;
   transition:transform .18s,filter .18s;
+  touch-action:manipulation;
+  overflow-wrap:anywhere;
 }
 
-.btn:active {
-  transform:scale(.98);
+.btn:focus-visible{
+  outline:3px solid var(--blue);
+  outline-offset:3px;
+}
+
+.btn:active{
+  transform:scale(.985);
   filter:brightness(.96);
 }
 
-.telegram {
+.telegram{
   font-size:19px;
+  flex:0 0 auto;
 }
 
-.note {
-  margin-top:9px;
+.note{
+  margin-top:10px;
   color:var(--muted);
   font-size:10px;
   line-height:1.7;
 }
 
-.timerbox {
-  margin-top:14px;
-  padding:13px;
+/* TIMER */
+
+.timerbox{
+  margin-top:15px;
+  padding:14px;
   border:1px solid var(--border);
   border-radius:13px;
   background:#040b1550;
 }
 
-.timerlabel {
+.timerlabel{
   color:var(--muted);
   font-size:10px;
   letter-spacing:.5px;
 }
 
-.timer {
-  margin:5px 0;
+.timer{
+  margin:6px 0;
   color:var(--gold);
-  font-size:28px;
+  font-size:30px;
   font-weight:900;
   font-variant-numeric:tabular-nums;
 }
 
-.timer-note {
+.timer-note{
   font-size:10px;
   line-height:1.6;
   color:#c1cada;
 }
 
-.section {
+/* BENEFITS */
+
+.section{
   margin-top:14px;
   padding:18px 13px;
   border:1px solid var(--border);
@@ -380,123 +415,273 @@ h1 {
   background:#101e30e8;
 }
 
-.section h2 {
+.section h2{
   text-align:center;
   font-size:18px;
   line-height:1.5;
 }
 
-.section-desc {
-  margin-top:7px;
+.section p{
+  margin-top:8px;
   text-align:center;
   font-size:11px;
   color:var(--muted);
   line-height:1.8;
 }
 
-.features {
+.benefits{
   display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
   gap:9px;
   margin-top:15px;
 }
 
-.feature {
-  display:flex;
-  align-items:center;
-  gap:11px;
-  padding:11px;
-  background:#14253a;
+.benefit{
+  min-width:0;
+  padding:12px 9px;
+  border:1px solid rgba(255,255,255,.08);
   border-radius:12px;
+  background:#091525;
+  text-align:center;
 }
 
-.icon {
-  display:grid;
-  place-items:center;
-  flex-shrink:0;
-  width:39px;
-  height:39px;
-  border-radius:11px;
-  background:#f5c76a14;
-  font-size:19px;
+.benefit-icon{
+  font-size:20px;
 }
 
-.feature strong {
-  font-size:12px;
-  line-height:1.5;
+.benefit b{
+  display:block;
+  margin-top:6px;
+  font-size:11px;
+  line-height:1.4;
 }
 
-.feature p {
-  margin-top:3px;
+.benefit span{
+  display:block;
+  margin-top:4px;
   font-size:10px;
+  line-height:1.5;
   color:var(--muted);
-  line-height:1.6;
 }
 
-.steps {
-  display:grid;
-  gap:12px;
-  margin:16px 0;
+/* LEARN SECTION */
+
+.learn{
+  text-align:center;
+  padding:20px 10px 8px;
 }
 
-.step {
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  font-size:12px;
+.learn-label{
+  color:var(--blue);
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:800;
+}
+
+.learn-title{
+  font-size:clamp(21px,6vw,25px);
+  font-weight:900;
+  margin-top:6px;
+  line-height:1.35;
+}
+
+.learn-copy{
+  margin:7px auto 0;
+  max-width:320px;
+  color:var(--muted);
+  font-size:11px;
   line-height:1.7;
 }
 
-.stepno {
-  display:grid;
-  place-items:center;
-  flex-shrink:0;
-  width:26px;
-  height:26px;
-  border-radius:50%;
-  background:#f5c76a18;
-  color:var(--gold);
-  font-weight:900;
-}
+/* DISCLAIMER AND FOOTER */
 
-.disclaimer {
+.disclaimer{
   margin-top:14px;
   padding:12px;
   border:1px solid var(--border);
   border-radius:12px;
-  color:#91a0b5;
+  color:#a5b2c5;
   font-size:10px;
   line-height:1.8;
 }
 
-.disclaimer strong {
+.disclaimer strong{
   color:#d1d9e5;
 }
 
-footer {
+footer{
   padding:18px 5px 4px;
   text-align:center;
-  color:#8d9bb0;
+  color:#a1aec0;
   font-size:11px;
   line-height:2;
 }
 
-footer a {
+footer a{
   color:var(--gold);
   font-weight:900;
   text-decoration:none;
 }
 
-@media(max-width:360px) {
-  body {padding:10px 8px 20px}
-  .hero {padding:20px 10px 15px}
-  .logo {width:90px;height:90px}
-  .btn {font-size:11px}
-  .market-item strong {font-size:10px}
-  .member-number {font-size:28px}
+footer a:focus-visible{
+  outline:2px solid var(--blue);
+  outline-offset:3px;
 }
 
-@media(prefers-reduced-motion:reduce) {
-  *,*:before,*:after {
+/* TABLET AND MOBILE */
+
+@media(max-width:480px){
+  body{
+    padding-top:10px;
+    padding-bottom:22px;
+  }
+
+  .container{
+    max-width:100%;
+  }
+
+  .hero{
+    padding:21px 13px 15px;
+    border-radius:21px;
+  }
+
+  .card{
+    padding:13px 11px;
+    margin:15px 0;
+  }
+
+  .section{
+    padding:16px 11px;
+  }
+
+  .btn{
+    min-height:58px;
+    font-size:13px;
+    border-radius:13px;
+  }
+
+  .note,.timer-note{
+    font-size:11px;
+  }
+
+  .activity-note{
+    font-size:10px;
+  }
+}
+
+@media(max-width:380px){
+  body{
+    padding:9px 8px 18px;
+  }
+
+  .hero{
+    padding:19px 10px 14px;
+    border-radius:18px;
+  }
+
+  .logo{
+    width:88px;
+    height:88px;
+    margin-bottom:12px;
+  }
+
+  .eyebrow{
+    font-size:9px;
+    letter-spacing:1.5px;
+  }
+
+  h1{
+    font-size:clamp(20px,6.2vw,24px);
+  }
+
+  .tagline{
+    font-size:11px;
+  }
+
+  .card{
+    padding:11px 9px;
+  }
+
+  .live-box{
+    padding:11px 9px;
+  }
+
+  .join-row{
+    gap:5px;
+    font-size:10px;
+  }
+
+  .row-left{
+    gap:7px;
+  }
+
+  .row-time{
+    font-size:9px;
+  }
+
+  .avatar{
+    width:26px;
+    height:26px;
+    flex-basis:26px;
+  }
+
+  .btn{
+    min-height:56px;
+    padding:13px 8px;
+    font-size:12px;
+    gap:7px;
+  }
+
+  .benefits{
+    gap:7px;
+  }
+
+  .benefit{
+    padding:11px 6px;
+  }
+
+  .benefit b{
+    font-size:10px;
+  }
+
+  .benefit span{
+    font-size:9px;
+  }
+
+  .learn-title{
+    font-size:21px;
+  }
+}
+
+@media(max-width:320px){
+  .badge{
+    font-size:9px;
+    padding:8px 10px;
+  }
+
+  .live-head b{
+    font-size:10px;
+  }
+
+  .join-row{
+    font-size:9px;
+  }
+
+  .row-time{
+    font-size:8px;
+  }
+
+  .btn{
+    font-size:11px;
+  }
+
+  .section h2{
+    font-size:16px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{
     transition:none!important;
     scroll-behavior:auto!important;
   }
@@ -506,6 +691,7 @@ footer a {
 
 <body>
 
+<!-- Meta Pixel fallback -->
 <noscript>
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1839050710479033&ev=PageView&noscript=1"
@@ -517,10 +703,11 @@ alt="">
   <div class="top">
     <div class="badge">
       <span class="dot"></span>
-      STOCK MARKET COMMUNITY
+      TELEGRAM COMMUNITY
     </div>
   </div>
 
+  <!-- HERO -->
   <section class="hero">
 
     <div class="logo">
@@ -536,190 +723,332 @@ alt="">
 
     <p class="tagline">
       NIFTY · BANKNIFTY · SENSEX<br>
-      <strong class="gold">Market Analysis & Trading Education</strong>
+      <strong class="gold">Market Analysis &amp; Trading Education</strong>
     </p>
 
-    <div class="rating">
-      ★★★★★
-      <small>Learn market concepts and understand trading risk</small>
+    <!-- COMMUNITY NAME PREVIEW -->
+    <div class="card">
+
+      <div class="community-status">
+        <span class="green-dot"></span>
+
+        <div>
+          <b class="status-title">Community information</b>
+
+          <div class="status-sub">
+            Explore market education and discussions on Telegram.
+          </div>
+        </div>
+      </div>
+
+      <div class="live-box">
+
+        <div class="live-head">
+          <b>👥 COMMUNITY NAME PREVIEW</b>
+          <span>Sample names</span>
+        </div>
+
+        <div class="join-row">
+          <span class="row-left">
+            <i class="avatar green">R</i>
+            <span class="sample-name">Rahul</span>
+          </span>
+          <span class="row-time">Example</span>
+        </div>
+
+        <div class="join-row">
+          <span class="row-left">
+            <i class="avatar blue">P</i>
+            <span class="sample-name">Priya</span>
+          </span>
+          <span class="row-time">Example</span>
+        </div>
+
+        <div class="join-row">
+          <span class="row-left">
+            <i class="avatar purple">S</i>
+            <span class="sample-name">Suresh</span>
+          </span>
+          <span class="row-time">Example</span>
+        </div>
+
+        <div class="live-foot">
+          <span class="green-dot"></span>
+          SAMPLE NAME PREVIEW
+        </div>
+
+        <div class="activity-note">
+          Illustrative names only. These randomly displayed examples are
+          not real member records or live join notifications.
+        </div>
+
+      </div>
     </div>
 
-    <!-- Market Watch -->
-    <div class="market">
-
-      <div class="market-head">
-        <div class="market-title">📈 MARKET WATCH</div>
-        <div class="market-status">
-          <span class="dot"></span>
-          MARKET OVERVIEW
-        </div>
-      </div>
-
-      <div class="market-grid">
-        <div class="market-item">
-          <strong>NIFTY 50</strong>
-          <span>Index analysis<br>Market levels</span>
-        </div>
-
-        <div class="market-item">
-          <strong>BANK NIFTY</strong>
-          <span>Banking index<br>Trend analysis</span>
-        </div>
-
-        <div class="market-item">
-          <strong>SENSEX</strong>
-          <span>Market trend<br>Overview</span>
-        </div>
-      </div>
-
-      <p class="market-note">
-        Educational market overview. Live prices require a verified market-data feed.
-      </p>
-    </div>
-
-    <!-- Telegram Community -->
-    <div class="member-card">
-      <div class="member-label">TELEGRAM COMMUNITY</div>
-
-      <div class="member-number" id="memberCount">Join us</div>
-
-      <div class="member-caption" id="memberCaption">
-        Connect with the community on Telegram.
-      </div>
-
-      <div class="member-status member-error" id="memberStatus">
-        <span class="dot"></span>
-        Open Telegram to view the community
-      </div>
-    </div>
-
-    <!-- BUTTON 1 -->
+    <!-- TOP TELEGRAM BUTTON -->
     <a class="btn telegram-join"
        href="https://t.me/+ri-3rFsjZFszOTBl"
        data-location="top">
+
       <span class="telegram">✈</span>
-      JOIN TELEGRAM NOW
+      <span>JOIN COMMUNITY NOW</span>
       <span>→</span>
+
     </a>
 
     <p class="note">
-      Keep this page open. Telegram is scheduled to open after 10 seconds.
-      You can also tap the button anytime.
+      The 10-second timer is only a countdown. It will not redirect you automatically.
     </p>
 
+    <!-- COUNTDOWN -->
     <div class="timerbox" aria-live="polite">
-      <div class="timerlabel">
-        TELEGRAM OPENS AUTOMATICALLY IN
-      </div>
+
+      <div class="timerlabel">10-SECOND COUNTDOWN</div>
 
       <div class="timer" id="timer">00:10</div>
 
       <div class="timer-note" id="timerNote">
-        Tap JOIN TELEGRAM NOW to open Telegram immediately.
+        Countdown running — tap the button whenever you want to open Telegram.
       </div>
+
     </div>
 
   </section>
 
-  <!-- Market Education -->
+  <!-- BENEFITS -->
   <section class="section">
 
-    <h2>Explore the <span class="gold">Stock Market</span></h2>
+    <h2>Join the <span class="gold">Community</span></h2>
 
-    <p class="section-desc">
-      Explore educational content, market analysis and trading concepts.
-      Trading involves financial risk.
+    <p>
+      Learn market concepts, understand chart discussions and build
+      risk awareness. No profits or returns are guaranteed.
     </p>
 
-    <div class="features">
+    <div class="benefits">
 
-      <div class="feature">
-        <div class="icon">📊</div>
-        <div>
-          <strong>Nifty & BankNifty Analysis</strong>
-          <p>Understand trends, market levels and price action.</p>
-        </div>
+      <div class="benefit">
+        <div class="benefit-icon">📊</div>
+        <b>Market Education</b>
+        <span>Understand market concepts</span>
       </div>
 
-      <div class="feature">
-        <div class="icon">📚</div>
-        <div>
-          <strong>Trading Education</strong>
-          <p>Explore charts and technical market concepts.</p>
-        </div>
+      <div class="benefit">
+        <div class="benefit-icon">📈</div>
+        <b>Chart Discussions</b>
+        <span>Learn how charts are discussed</span>
       </div>
 
-      <div class="feature">
-        <div class="icon">🛡️</div>
-        <div>
-          <strong>Risk Management</strong>
-          <p>Learn about stop-losses and position sizing.</p>
-        </div>
+      <div class="benefit">
+        <div class="benefit-icon">🧠</div>
+        <b>Trading Concepts</b>
+        <span>Build knowledge step by step</span>
       </div>
 
-      <div class="feature">
-        <div class="icon">👥</div>
-        <div>
-          <strong>Telegram Community</strong>
-          <p>Join discussions and connect with fellow learners.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Joining Steps -->
-  <section class="section">
-
-    <h2>Join in <span class="gold">3 Simple Steps</span></h2>
-
-    <div class="steps">
-
-      <div class="step">
-        <span class="stepno">1</span>
-        <span>Tap the JOIN TELEGRAM NOW button.</span>
-      </div>
-
-      <div class="step">
-        <span class="stepno">2</span>
-        <span>Open the invitation in Telegram.</span>
-      </div>
-
-      <div class="step">
-        <span class="stepno">3</span>
-        <span>Tap Join in Telegram to join the community.</span>
+      <div class="benefit">
+        <div class="benefit-icon">🛡️</div>
+        <b>Risk Awareness</b>
+        <span>Learn why risk matters</span>
       </div>
 
     </div>
 
-    <!-- BUTTON 2: same text as button 1 -->
-    <a class="btn telegram-join"
-       href="https://t.me/+ri-3rFsjZFszOTBl"
-       data-location="bottom">
-      <span class="telegram">✈</span>
-      JOIN TELEGRAM NOW
-      <span>→</span>
-    </a>
+    <!-- BOTTOM TELEGRAM BUTTON -->
+    <div style="margin-top:16px">
+
+      <a class="btn telegram-join"
+         href="https://t.me/+ri-3rFsjZFszOTBl"
+         data-location="bottom">
+
+        <span class="telegram">✈</span>
+        <span>JOIN COMMUNITY NOW</span>
+        <span>→</span>
+
+      </a>
+
+    </div>
 
   </section>
 
-  <div class="disclaimer">
-    <strong>DISCLAIMER</strong><br>
-    This page is for educational and informational purposes only.
-    No profits or returns are guaranteed. Trading and investing involve
-    financial risk. Do your own research and consult a qualified financial
-    professional where appropriate.
+  <!-- LEARN SECTION -->
+  <div class="learn">
+
+    <div class="learn-label">WHAT YOU'LL GET</div>
+
+    <div class="learn-title">
+      Learn <span class="gold">•</span>
+      Understand <span class="gold">•</span> Grow
+    </div>
+
+    <p class="learn-copy">
+      Start with education, ask better questions and always understand
+      the risks before making financial decisions.
+    </p>
+
   </div>
 
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+
+    <strong>DISCLAIMER</strong><br>
+
+    This page is for educational and informational purposes only.
+    No profits or returns are guaranteed. Trading and investing involve
+    financial risk. Make decisions based on your own research and
+    risk tolerance.
+
+  </div>
+
+  <!-- FOOTER -->
   <footer>
+
     ⚡ Powered by
+
     <a href="https://t.me/+3XoqJNLxYHswNTc1"
        target="_blank"
        rel="noopener noreferrer">ADBUILDAGENCY</a>
+
     <br>
+
     Learn first. Understand the risk. Trade responsibly.
+
   </footer>
 
 </main>
+
+<script>
+/* 10-second countdown only.
+   It does not redirect automatically. */
+
+let seconds = 10;
+
+const timerEl = document.getElementById('timer');
+const timerNote = document.getElementById('timerNote');
+
+const countdown = setInterval(() => {
+
+  seconds = Math.max(seconds - 1, 0);
+
+  timerEl.textContent =
+    '00:' + String(seconds).padStart(2, '0');
+
+  if (seconds === 0) {
+
+    clearInterval(countdown);
+
+    timerNote.textContent =
+      'Countdown complete. Tap JOIN COMMUNITY NOW whenever you want to open Telegram.';
+  }
+
+}, 1000);
+
+
+/* Random illustrative names.
+   These are examples, not actual live member records. */
+
+const sampleNames = [
+  'Rahul',
+  'Priya',
+  'Suresh',
+  'Ankit',
+  'Pooja',
+  'Rohan',
+  'Aman',
+  'Neha',
+  'Vikram',
+  'Kavita',
+  'Arjun',
+  'Sneha',
+  'Ravi',
+  'Simran',
+  'Karan',
+  'Isha',
+  'Mohit',
+  'Anjali'
+];
+
+const nameRows = document.querySelectorAll('.join-row');
+
+const avatarClasses = [
+  'green',
+  'blue',
+  'purple'
+];
+
+let lastNames = [];
+
+function pickRandomName(){
+
+  const available = sampleNames.filter(
+    name => !lastNames.includes(name)
+  );
+
+  const pool = available.length
+    ? available
+    : sampleNames;
+
+  const name = pool[
+    Math.floor(Math.random() * pool.length)
+  ];
+
+  lastNames.push(name);
+
+  if(lastNames.length > 8){
+    lastNames.shift();
+  }
+
+  return name;
+}
+
+setInterval(() => {
+
+  nameRows.forEach((row,index) => {
+
+    const name = pickRandomName();
+
+    const avatar = row.querySelector('.avatar');
+    const nameEl = row.querySelector('.sample-name');
+
+    if(avatar){
+      avatar.textContent = name.charAt(0).toUpperCase();
+
+      avatar.className =
+        'avatar ' +
+        avatarClasses[index % avatarClasses.length];
+    }
+
+    if(nameEl){
+      nameEl.textContent = name;
+    }
+
+  });
+
+}, 3000);
+
+
+/* Meta Pixel tracks CTA clicks.
+   A click does not confirm a Telegram join. */
+
+document.querySelectorAll('.telegram-join').forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    if(typeof window.fbq === 'function'){
+
+      window.fbq(
+        'trackCustom',
+        'TelegramJoinClick',
+        {
+          button_location: button.dataset.location
+        }
+      );
+
+    }
+
+  });
+
+});
+</script>
+
 </body>
 </html>
