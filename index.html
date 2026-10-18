@@ -1,516 +1,441 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
 
-<title>Gautamjha</title>
-<!-- Meta Pixel Code -->
+<title>Gautam Kumar Jha | Join Telegram</title>
+<meta name="description" content="Join the Gautam Kumar Jha Telegram community for Nifty, BankNifty, Sensex market education and analysis.">
+
+<!-- Meta Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)
+}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1839050710479033');
-fbq('track', 'PageView');
+fbq('init','1839050710479033');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1839050710479033&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<meta name="description" content="Join King of Nifty for free daily Nifty & BankNifty analysis.">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+:root{
+  --bg:#07111f;
+  --panel:#101e30;
+  --gold:#f5c76a;
+  --text:#f7f8fc;
+  --muted:#9eacc0;
+  --green:#48d597;
+  --border:rgba(255,255,255,.09);
 }
-
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-    font-family:Arial,Segoe UI,sans-serif;
-    background:#f7f9fc;
-    color:#151525;
+  min-height:100vh;
+  padding:16px 12px 28px;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(ellipse at top,#1b3552,transparent 55%),
+    var(--bg);
 }
-
-.container{
-    width:100%;
-    max-width:440px;
-    margin:auto;
-    padding:22px 10px;
-    text-align:center;
+.container{max-width:440px;width:100%;margin:auto}
+a{-webkit-tap-highlight-color:transparent}
+.top{text-align:center;margin-bottom:15px}
+.badge{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 13px;border-radius:30px;
+  color:#a4f1ce;background:#12352e;
+  border:1px solid #28594a;font-size:10px;
+  font-weight:800;letter-spacing:.6px
 }
-
-
-/* Online Bar */
-
-.online{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    background:#e8f5e9;
-    color:#218739;
-    padding:6px 14px;
-    border-radius:30px;
-    font-size:11px;
-    font-weight:bold;
-}
-
 .dot{
-    width:7px;
-    height:7px;
-    background:#22c55e;
-    border-radius:50%;
+  width:7px;height:7px;border-radius:50%;
+  background:var(--green)
 }
-
-
-/* Profile */
-
-.profile{
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    margin:18px auto 8px;
-    overflow:hidden;
-    border:3px solid white;
-    box-shadow:0 4px 15px #ddd;
+.hero{
+  position:relative;overflow:hidden;text-align:center;
+  padding:24px 16px 18px;border-radius:23px;
+  background:linear-gradient(150deg,#172d46,#0b1727);
+  border:1px solid var(--border);
+  box-shadow:0 18px 45px #0004
 }
-
-.profile img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.hero:before{
+  content:"";position:absolute;top:0;left:15%;width:70%;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent)
 }
-
-
-/* Title */
-
-h1{
-    font-size:20px;
-    margin:8px 0 3px;
-    font-weight:800;
+.logo{
+  width:104px;height:104px;margin:0 auto 15px;
+  padding:4px;border-radius:50%;
+  background:linear-gradient(135deg,#fff0ba,#d69a30);
+  box-shadow:0 0 30px #f5c76a22
 }
-
-.tag{
-    color:#0066ff;
-    font-weight:bold;
-    font-size:12px;
+.logo img{
+  width:100%;height:100%;object-fit:cover;
+  border-radius:50%;border:3px solid #102036
 }
-
-
-/* Rating */
-
-.rating{
-    margin:10px;
-    color:#ff9800;
-    font-size:16px;
+.eyebrow{
+  color:var(--gold);font-size:10px;font-weight:800;
+  letter-spacing:2px;margin-bottom:8px
 }
-
+h1{font-size:clamp(22px,6vw,28px);font-weight:900}
+.tagline{margin-top:9px;font-size:12px;line-height:1.8;color:#d6dfec}
+.gold{color:var(--gold)}
+.rating{margin:13px 0;color:var(--gold);font-size:18px}
 .rating small{
-    color:#777;
-    font-size:11px;
+  display:block;margin-top:5px;color:var(--muted);
+  font-size:10px;letter-spacing:0
 }
 
+/* Member counter */
+.member-card{
+  margin:17px 0;padding:17px 12px;
+  border-radius:16px;
+  border:1px solid #a77c373d;
+  background:linear-gradient(135deg,#182a40,#111b2b);
+}
+.member-label{
+  color:#d4dceb;font-size:10px;
+  font-weight:800;letter-spacing:1.5px
+}
+.member-number{
+  margin:8px 0 4px;color:var(--gold);
+  font-size:36px;font-weight:900;
+  letter-spacing:-1px;font-variant-numeric:tabular-nums
+}
+.member-caption{font-size:11px;color:var(--muted);line-height:1.6}
+.member-status{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:11px;padding:6px 9px;
+  background:#0e3028;color:#a4f1ce;
+  border-radius:20px;font-size:10px;font-weight:700
+}
+.member-status .dot{width:6px;height:6px}
+.member-error{color:#b7c3d3;background:#1c2b3e}
 
 /* Buttons */
-
 .btn{
-    position:relative;
-    display:block;
-
-    width:100%;
-    max-width:420px;
-
-    margin:14px auto;
-
-    overflow:hidden;
-
-    background:linear-gradient(
-        135deg,
-        #0066ff,
-        #004dcc
-    );
-
-    color:white;
-
-    padding:18px 8px;
-
-    border-radius:11px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-    font-size:13px;
-
-    white-space:nowrap;
-
-    box-shadow:
-        0 4px 12px #b8d0ff;
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;min-height:56px;padding:14px 10px;
+  border-radius:13px;
+  background:linear-gradient(135deg,#ffe5a0,#e8ad43);
+  color:#182033;text-decoration:none;
+  font-size:13px;font-weight:900;
+  box-shadow:0 7px 22px #d99c362b;
+  transition:transform .2s;
 }
-
-
-/* Sliding Light */
-
-.btn::after{
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:-100%;
-
-    width:45%;
-    height:100%;
-
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,0.75),
-        transparent
-    );
-
-    transform:skewX(-20deg);
-
-    animation:buttonLight 2s infinite;
+.btn:active{transform:scale(.98)}
+.telegram{font-size:20px}
+.note{margin-top:9px;color:var(--muted);font-size:10px;line-height:1.7}
+.timerbox{
+  margin-top:15px;padding:12px;
+  border:1px solid var(--border);
+  border-radius:13px;background:#040b153d
 }
-
-@keyframes buttonLight{
-
-    0%{
-        left:-100%;
-    }
-
-    45%{
-        left:120%;
-    }
-
-    100%{
-        left:120%;
-    }
-
+.timerlabel{color:var(--muted);font-size:10px}
+.timer{margin:5px 0;color:var(--gold);font-size:25px;font-weight:900}
+.timer-note{font-size:10px;line-height:1.6;color:#c1cada}
+.section{
+  margin-top:15px;padding:19px 14px;
+  border:1px solid var(--border);
+  border-radius:18px;background:#101e30e8
 }
-
-
-/* Stats */
-
-.stats{
-    display:flex;
-    gap:7px;
-    margin:14px 0;
+.section h2{text-align:center;font-size:18px;line-height:1.5}
+.section-desc{
+  margin-top:7px;text-align:center;
+  font-size:11px;color:var(--muted);line-height:1.8
 }
-
-.card{
-    flex:1;
-    background:white;
-    padding:11px 4px;
-    border-radius:11px;
-    box-shadow:0 2px 7px #eee;
-    font-size:11px;
-}
-
-.number{
-    color:#0066ff;
-    font-size:17px;
-    font-weight:bold;
-    margin-bottom:2px;
-}
-
-
-/* Content */
-
-.heading{
-    font-size:15px;
-    font-weight:bold;
-    line-height:1.4;
-}
-
-.heading span{
-    color:#0066ff;
-}
-
-.sub{
-    color:#777;
-    margin:7px;
-    font-size:11px;
-}
-
-
-/* Alert */
-
-.alert{
-    background:#fff3e0;
-    color:#e65100;
-    padding:9px;
-    border-radius:25px;
-    font-size:11px;
-    font-weight:bold;
-    margin:13px 0;
-}
-
-
-/* Features */
-
+.features{display:grid;gap:9px;margin-top:16px}
 .feature{
-    background:white;
-    padding:11px;
-    margin:7px 0;
-    border-radius:10px;
-
-    text-align:left;
-
-    display:flex;
-    gap:9px;
-    align-items:center;
-
-    box-shadow:0 2px 6px #eee;
-
-    font-size:12px;
+  display:flex;align-items:center;gap:11px;
+  padding:12px;background:#14253a;border-radius:12px
 }
-
 .icon{
-    font-size:18px;
+  display:grid;place-items:center;flex-shrink:0;
+  width:40px;height:40px;border-radius:11px;
+  background:#f5c76a14;font-size:19px
 }
-
-
-/* Footer */
-
-.ads{
-    margin-top:22px;
-    padding:13px;
-    border-top:1px solid #ddd;
-    font-size:11px;
-    color:#777;
+.feature strong{font-size:12px;line-height:1.5}
+.feature p{margin-top:3px;font-size:10px;color:var(--muted);line-height:1.6}
+.steps{display:grid;gap:13px;margin:17px 0}
+.step{display:flex;align-items:flex-start;gap:10px;font-size:12px;line-height:1.7}
+.stepno{
+  display:grid;place-items:center;flex-shrink:0;
+  width:26px;height:26px;border-radius:50%;
+  background:#f5c76a18;color:var(--gold);font-weight:900
 }
-
-.ads a{
-    color:#0066ff;
-    font-weight:bold;
-    text-decoration:none;
-}
-
 .disclaimer{
-    margin-top:14px;
-    font-size:9px;
-    color:#999;
-    line-height:1.4;
+  margin-top:16px;padding:13px;border:1px solid var(--border);
+  border-radius:12px;color:#8d9bb0;font-size:10px;line-height:1.8
 }
-
+.disclaimer strong{color:#d1d9e5}
+footer{
+  padding:19px 5px 4px;text-align:center;
+  color:#8d9bb0;font-size:11px;line-height:2
+}
+footer a{color:var(--gold);font-weight:900;text-decoration:none}
+@media(max-width:360px){
+  body{padding:11px 8px 22px}
+  .hero{padding:21px 11px 16px}
+  .logo{width:92px;height:92px}
+  .btn{font-size:11px}
+  .member-number{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{transition:none!important}
+}
 </style>
 </head>
 
 <body>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1839050710479033&ev=PageView&noscript=1" alt="">
+</noscript>
 
-<div class="container">
+<main class="container">
 
-    <!-- Online -->
+  <div class="top">
+    <div class="badge"><span class="dot"></span> STOCK MARKET COMMUNITY</div>
+  </div>
 
-    <div class="online">
-        <span class="dot"></span>
-        5,947 Traders Online Now
+  <section class="hero">
+    <div class="logo">
+      <img
+        src="https://i.ibb.co/J6zCLsZ/Cb0-99-C8-VQ-hp-Twsj3r-Re-P6-A5p-Fy5ft-QKHo-GKr6opt08o-Ce-W6mnexh-Re4pgtb1sjuby-Iic-KNTEPr-MMCBYNRin6-Fe.jpg"
+        alt="Gautam Kumar Jha logo">
     </div>
 
-
-    <!-- Profile -->
-
-    <div class="profile">
-
-        <img
-        src="https://i.ibb.co/J6zCLsZ/Cb0-99-C8-VQ-hp-Twsj3r-Re-P6-A5p-Fy5ft-QKHo-GKr6opt08o-Ce-W6mnexh-Re4pgtb1sjuby-Iic-KNTEPr-MMCBYNRin6-Fe.jpg"alt="Logo">
-
-    </div>
-
-
-    <!-- Title -->
-
+    <div class="eyebrow">WELCOME TO OUR COMMUNITY</div>
     <h1>GAUTAM KUMAR JHA</h1>
 
-    <div class="tag">
-        🏆 India's No.1 Stock Market Channel
-    </div>
-
-
-    <!-- Rating -->
+    <p class="tagline">
+      NIFTY · BANKNIFTY · SENSEX<br>
+      <strong class="gold">Market Analysis & Trading Education</strong>
+    </p>
 
     <div class="rating">
-
-        ★★★★★
-
-        <br>
-
-        <small>
-            4.9/5 (2340 Reviews)
-        </small>
-
+      ★★★★★
+      <small>Learn market concepts and understand trading risk</small>
     </div>
 
+    <!-- Real member counter: fetched from your backend -->
+    <div class="member-card">
+      <div class="member-label">TELEGRAM COMMUNITY</div>
 
-    <!-- Button -->
+      <div class="member-number" id="memberCount">—</div>
 
-    <a
-    class="btn"
-    href="https://t.me/+ri-3rFsjZFszOTBl">
+      <div class="member-caption" id="memberCaption">
+        Connect with the community on Telegram
+      </div>
 
-        Join Free Telegram Channel →
+      <div class="member-status member-error" id="memberStatus">
+        Member count not connected
+      </div>
+    </div>
 
+    <a class="btn telegram-join"
+       href="https://t.me/+ri-3rFsjZFszOTBl"
+       target="_blank" rel="noopener noreferrer"
+       data-location="top">
+      <span class="telegram">✈</span>
+      JOIN FREE TELEGRAM CHANNEL <span>→</span>
     </a>
 
+    <p class="note">
+      Open Telegram and tap Join to become a member.
+    </p>
 
-    <!-- Stats -->
-
-    <div class="stats">
-
-        <div class="card">
-
-            <div class="number">
-                50K+
-            </div>
-
-            Members
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="number">
-                5+
-            </div>
-
-            Years
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="number">
-                95%
-            </div>
-
-            Accuracy
-
-        </div>
-
+    <div class="timerbox">
+      <div class="timerlabel">YOUR TELEGRAM LINK OPENS IN</div>
+      <div class="timer" id="timer">00:10</div>
+      <div class="timer-note" id="timerNote">
+        You can join manually anytime using the button above.
+      </div>
     </div>
+  </section>
 
+  <section class="section">
+    <h2>Learn the <span class="gold">Stock Market</span></h2>
+    <p class="section-desc">
+      Explore educational content and market analysis.
+      Trading always involves risk.
+    </p>
 
-    <!-- Content -->
-
-    <div class="heading">
-
-        Get <span>FREE Daily Calls</span>
-
-        <br>
-
-        for NIFTY, BANKNIFTY & SENSEX
-
-    </div>
-
-
-    <div class="sub">
-
-        Join thousands of traders getting daily market analysis
-
-    </div>
-
-
-    <!-- Alert -->
-
-    <div class="alert">
-
-        🔥 Limited FREE Access Available
-
-    </div>
-
-
-    <!-- Features -->
-
-    <div class="feature">
-
-        <div class="icon">
-            📊
-        </div>
-
+    <div class="features">
+      <div class="feature">
+        <div class="icon">📊</div>
         <div>
-            Daily Nifty & BankNifty Levels
+          <strong>Nifty & BankNifty Analysis</strong>
+          <p>Understand trends, market levels and price action.</p>
         </div>
+      </div>
 
-    </div>
-
-
-    <div class="feature">
-
-        <div class="icon">
-            🎓
-        </div>
-
+      <div class="feature">
+        <div class="icon">📚</div>
         <div>
-            Educational Market Analysis
+          <strong>Trading Education</strong>
+          <p>Explore charts and technical market concepts.</p>
         </div>
+      </div>
 
-    </div>
-
-
-    <div class="feature">
-
-        <div class="icon">
-            👥
-        </div>
-
+      <div class="feature">
+        <div class="icon">🛡️</div>
         <div>
-            50,000+ Subscribers Community
+          <strong>Risk Management</strong>
+          <p>Learn about stop-losses and position sizing.</p>
         </div>
+      </div>
 
+      <div class="feature">
+        <div class="icon">👥</div>
+        <div>
+          <strong>Community Updates</strong>
+          <p>Connect with fellow learners through Telegram.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Join in <span class="gold">3 Simple Steps</span></h2>
+
+    <div class="steps">
+      <div class="step">
+        <span class="stepno">1</span>
+        <span>Click the Telegram invitation button.</span>
+      </div>
+      <div class="step">
+        <span class="stepno">2</span>
+        <span>Open the invitation in Telegram.</span>
+      </div>
+      <div class="step">
+        <span class="stepno">3</span>
+        <span>Tap Join in Telegram to join the community.</span>
+      </div>
     </div>
 
-
-    <!-- Second Button -->
-
-    <a
-    class="btn"
-    href="https://t.me/+ri-3rFsjZFszOTBl">
-
-        Join Free Telegram Channel →
-
+    <a class="btn telegram-join"
+       href="https://t.me/+ri-3rFsjZFszOTBl"
+       target="_blank" rel="noopener noreferrer"
+       data-location="bottom">
+      <span class="telegram">✈</span>
+      JOIN THE COMMUNITY NOW <span>→</span>
     </a>
+  </section>
 
+  <div class="disclaimer">
+    <strong>DISCLAIMER</strong><br>
+    This page is for educational and informational purposes only.
+    No profits or returns are guaranteed. Trading and investing involve
+    financial risk. Do your own research and consult a qualified financial
+    professional where appropriate.
+  </div>
 
-    <!-- Disclaimer -->
+  <footer>
+    ⚡ Powered by
+    <a href="https://t.me/+3XoqJNLxYHswNTc1"
+       target="_blank" rel="noopener noreferrer">ADBUILDAGENCY</a>
+    <br>
+    Learn first. Understand the risk. Trade responsibly.
+  </footer>
 
-    <div class="disclaimer">
+</main>
 
-        <strong>
-            Disclaimer:
-        </strong>
+<script>
+/*
+  REAL MEMBER COUNT SETUP
 
-        <br>
+  Create a backend endpoint that returns:
+  { "members": 100000 }
 
-        This channel is for educational purposes only.
-        Trading involves market risk.
-        Please consult your financial advisor before making investment decisions.
+  Replace MEMBER_API_URL with your actual endpoint.
+  Never enter a made-up number here.
+*/
+const MEMBER_API_URL = "/api/telegram-members";
 
-    </div>
+async function loadRealMemberCount() {
+  const countEl = document.getElementById("memberCount");
+  const captionEl = document.getElementById("memberCaption");
+  const statusEl = document.getElementById("memberStatus");
 
+  try {
+    const response = await fetch(MEMBER_API_URL, {
+      method: "GET",
+      headers: { "Accept": "application/json" },
+      cache: "no-store"
+    });
 
-    <!-- Footer -->
+    if (!response.ok) throw new Error("Member API unavailable");
 
-    <div class="ads">
+    const data = await response.json();
+    const count = Number(data.members);
 
-        🔥 Powered by
+    if (!Number.isSafeInteger(count) || count < 0) {
+      throw new Error("Invalid member count");
+    }
 
-        <a href="https://telegram.me/+3XoqJNLxYHswNTc1">
+    countEl.textContent = count.toLocaleString("en-IN");
+    captionEl.textContent = "Verified Telegram member count";
+    statusEl.textContent = "✓ Count received from member API";
+    statusEl.classList.remove("member-error");
+  } catch (error) {
+    countEl.textContent = "Join us";
+    captionEl.textContent =
+      "Open Telegram to see the community and join.";
+    statusEl.textContent = "Live member count not connected";
+    statusEl.classList.add("member-error");
+  }
+}
 
-            ADBUILDAGENCY
+loadRealMemberCount();
 
-        </a>
+/*
+  10-second countdown.
+  Automatic redirect is disabled by default so visitors can choose
+  when to open Telegram. Set AUTO_REDIRECT to true if required.
+*/
+const AUTO_REDIRECT = false;
+const TELEGRAM_URL = "https://t.me/+ri-3rFsjZFszOTBl";
+let seconds = 10;
 
-    </div>
+const timerEl = document.getElementById("timer");
+const timerNote = document.getElementById("timerNote");
 
-</div>
+const countdown = setInterval(() => {
+  seconds--;
+  timerEl.textContent = "00:" + String(Math.max(seconds, 0)).padStart(2, "0");
+
+  if (seconds <= 0) {
+    clearInterval(countdown);
+    timerNote.textContent = "Ready! Tap the button to open Telegram.";
+
+    if (AUTO_REDIRECT) {
+      window.location.assign(TELEGRAM_URL);
+    }
+  }
+}, 1000);
+
+/*
+  Meta Pixel records CTA clicks, not confirmed Telegram joins.
+*/
+document.querySelectorAll(".telegram-join").forEach(button => {
+  button.addEventListener("click", () => {
+    if (typeof window.fbq === "function") {
+      window.fbq("trackCustom", "TelegramJoinClick", {
+        button_location: button.dataset.location
+      });
+    }
+  });
+});
+</script>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -528,5 +453,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1839050710479033&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+    
 </body>
 </html>
